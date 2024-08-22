@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #1f1f1f;
+    color           : whitesmoke;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    min-height      : 100vh;
+    font-size       : 10px;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: 3px 3px 20px 5px #8D2653;
+        border: 5px solid #8D2653;
+    }
+    25%{
+        box-shadow: 3px 3px 20px 5px #F41C95;
+        border: 5px solid #F41C95;
+    }
+    50%{
+        box-shadow:3px 3px 20px 5px#E3227C;
+        border: 5px solid #E3227C;
+    }
+    75%{
+        box-shadow: 3px 3px 20px 5px #F8589E;
+        border: 5px solid #F8589E;
+    }
+    100%{
+        box-shadow: 3px 3px 20px 5px #8D2653;
+        border: 5px solid #8D2653;
+    }
+}
+
+.gameContainer{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameHeader{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 15%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+
+.textContainer{
+    height: 35%;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+#guessNumber{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #F41C95;
+    background-color:#1f1f1f;
+    padding: 1rem;
+    border-radius: 10px;
+    animation: glow 3000ms linear infinite;
+}
+
+#score{
+    font-size: 2rem;
+}
+
+#credits{
+    font-size: 1.5rem;
+}
+
+#userCredit, #userScore{
+    color: yellow;
+}
+
+.buttonContainer{
+    height: 55%;
+    width: 100%;
+    display: flex;
+}
+
+.buttonInnerContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: 55%;
+    width: 60%;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+    background-color: #1f1f1f;
+    color: #F41C95;
+}
+
+
+
+
+
+
+
+
