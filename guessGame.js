@@ -36,26 +36,20 @@ function game(key){
     } else{
             target = Math.floor(Math.random() * 2) + 1;
             console.log(`target: ${target}`);
-        if(target == key){
-            document.querySelector("h1").innerText        = "You win!";
-                                   checkCredits.innerText = (earnedCredits += (betCount * 2));
-            setTimeout(showNumber, 100);
+
+            let win = (target == key);
+
+            checkCredits.innerText = win ? (earnedCredits += (betCount * 2)) : earnedCredits;
+            document.querySelector("h1").innerText = win ? "You win!" : "You lose..";
             playerBet.innerText = "Bet: 0";
             betCount            = 0;
-        } else{
-            document.querySelector("h1").innerText = "You lose..";
-            setTimeout(showNumber, 100);
-            playerBet.innerText = "Bet: 0";
-            betCount            = 0;
-        };
     };
 };
 
-function showNumber(key){
+function showNumber(){
     guessNumber.innerText = target;
     setTimeout(hideNumber, 2000);
     function hideNumber(){
         guessNumber.innerText = "?";
     }
 };
-
