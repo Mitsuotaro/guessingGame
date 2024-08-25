@@ -43,6 +43,7 @@ function game(key){
             document.querySelector("h1").innerText = win ? "You win!" : "You lose..";
             playerBet.innerText = "Bet: 0";
             betCount            = 0;
+            showNumber();
     };
 };
 
