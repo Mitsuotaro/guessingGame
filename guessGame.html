@@ -7,18 +7,24 @@
     <title>Guessing Game</title>
 </head>
 <body>
+    <div class="container"></div>
     <div class = "gameContainer">
         <div class="gameHeader">
             <h1>Guess the number</h1>
-        </div>
-        <div class="textContainer">
             <p id="guessNumber">?</p>
-            <p id="score">Score: <span id="userScore">0</span></p>
-            <p id="credits">Credits: <span id="userCredit">10</span</p>
         </div>
         <div class="buttonContainer">
             <div class="buttonInnerContainer"><button id="one" class="button">1</button></div>
             <div class="buttonInnerContainer"><button id="two" class="button">2</button></div>
+        </div>
+    </div>
+    <div class="betContainer">
+        <div class="textContainer"> 
+            <p id="bet">Bet: 0</p>
+            <p id="credits">Credits: <span id="checkCredits">10</span></p>
+            <div class="betButtonContainer">
+                <button id="betButton">Bet</button>
+            </div>
         </div>
     </div>
     <script src="guessGame.js" charset="UTF-8"></script>
